@@ -1,6 +1,13 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "pinyin-order"
 version = "0.0.1"
+dependencies = [
+  "pypinyin >= 0.45.0",
+]
 authors = [
   { name="Ryan Lee", email="ryaningli@foxmail.com" },
 ]
@@ -16,7 +23,3 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/Ryaningli/pinyin-order.git"
 Issues = "https://github.com/Ryaningli/pinyin-order/issues"
-
-[build-system]
-requires = ["pypinyin"]
-build-backend = "hatchling.build"

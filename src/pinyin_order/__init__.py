@@ -1,5 +1,10 @@
 from pypinyin import lazy_pinyin
 
+__all__ = [
+    'PinyinOrderStr',
+    'pinyin_sorted'
+]
+
 
 def _is_han(s: str):
     return '\u4e00' <= s <= '\u9fff'

@@ -1,0 +1,22 @@
+[project]
+name = "pinyin-order"
+version = "0.0.1"
+authors = [
+  { name="Ryan Lee", email="ryaningli@foxmail.com" },
+]
+description = "包含中文的字符串使用拼音比较大小，可用于使用拼音排序字符串等的需求。"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
+
+[build-system]
+requires = ["pypinyin"]
+build-backend = "hatchling.build"

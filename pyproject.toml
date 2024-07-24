@@ -14,8 +14,8 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/pypa/sampleproject"
-Issues = "https://github.com/pypa/sampleproject/issues"
+Homepage = "https://github.com/Ryaningli/pinyin-order.git"
+Issues = "https://github.com/Ryaningli/pinyin-order/issues"
 
 [build-system]
 requires = ["pypinyin"]

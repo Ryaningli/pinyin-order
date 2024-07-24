@@ -1,4 +1,8 @@
+from typing import Iterable, List, TYPE_CHECKING
 from pypinyin import lazy_pinyin
+
+if TYPE_CHECKING:
+    from _typeshed import SupportsRichComparisonT
 
 __all__ = [
     'PinyinOrderStr',
@@ -85,5 +89,10 @@ class PinyinOrderStr:
                 return True
 
 
-def pinyin_sorted():
-    ...
+def pinyin_sorted(
+        __iterable: Iterable['SupportsRichComparisonT'],
+        *,
+        reverse: bool = False,
+        ignore_case: bool = True
+) -> List['SupportsRichComparisonT']:
+    return sorted(__iterable, key=lambda x: PinyinOrderStr(x, ignore_case=ignore_case), reverse=reverse)
